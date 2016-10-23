@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans');
 html, .view body { background-color: black; counter-reset: slideidx; }
 body, .view section { background-color: white; border-radius: 12px }
 /* A section is a slide. It's size is 800x600, and this will never change */
@@ -8,25 +9,37 @@ section, .view head > title {
 }
 
 .moz {
-    font-family: Meta, 'Open Sans', arial, serif;
+    font-family: Meta, 'Fira Sans', arial, serif;
 }
 
 .red {
     color: #C13832;
 }
 
+th {
+    padding-right: .5em;
+    text-align: right;
+    vertical-align: top;
+}
+
+tr {
+    margin: 1em;
+}
+
 .mozillians {
-  font: bold 80px 'Meta';
-  width: 50%;.
-  height: 80px;
+    font-family: 'Meta', 'Fira Sans';
+    font-size: 80px;
+    font-weight: bold;
+    width: 50%;
+    height: 80px;
 }
 
 .mozillians > #stroke {
-  fill: white;
-  stroke: white;
-  stroke-width:15px;
-  // stroke-dasharray: 2,2;
-  stroke-linejoin: round;
+    fill: white;
+    stroke: white;
+    stroke-width:15px;
+    // stroke-dasharray: 2,2;
+    stroke-linejoin: round;
 }
 .mozillians > #text {
     fill: #0095DD;
@@ -88,16 +101,16 @@ a {
 }
 
 .mozvr {
-	  background: #ffcd02;
-	  box-shadow: -3px 3px 0 0 rgba(0,0,0,.15);
-	  color: #333;
-	  display: inline-block;
-	  font: 200 italic 1.85rem Fira Sans, Helvetica, sans-serif;
-	  font-size: calc(1.85rem + 1vw);
-	  letter-spacing: 0.015em;
-	  text-transform: uppercase;
-	  padding: 1rem 2rem;
-	  text-align: center;
+    background: #ffcd02;
+    box-shadow: -3px 3px 0 0 rgba(0,0,0,.15);
+    color: #333;
+    display: inline-block;
+    font: 200 italic 1.85rem Fira Sans, Helvetica, sans-serif;
+    font-size: calc(1.85rem + 1vw);
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    text-align: center;
     position: absolute;
     top: 10%;
     right: 10%;
