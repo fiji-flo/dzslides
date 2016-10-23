@@ -7,6 +7,63 @@ section, .view head > title {
     font-size: 30px;
 }
 
+.moz {
+    font-family: Meta, 'Open Sans', arial, serif;
+}
+
+.red {
+    color: #C13832;
+}
+
+.mozillians {
+  font: bold 80px 'Meta';
+  width: 50%;.
+  height: 80px;
+}
+
+.mozillians > #stroke {
+  fill: white;
+  stroke: white;
+  stroke-width:15px;
+  // stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+.mozillians > #text {
+    fill: #0095DD;
+}
+
+a {
+    color: #0095DD;
+    text-decoration: none;
+}
+
+
+.media-bg > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: auto;
+    z-index: -1;
+
+}
+
+.media-bg > div > image {
+    width: 100%;
+    height: auto;
+}
+
+.media-bg > div > video {
+    width: 100%;
+    height: auto;
+}
+
 .f-center {
     display: flex;
     flex-direction: column;
@@ -26,10 +83,100 @@ section, .view head > title {
     max-width: 80%;
 }
 
+.testpilot {
+    background-color: #1E4488;
+}
+
+.mozvr {
+	  background: #ffcd02;
+	  box-shadow: -3px 3px 0 0 rgba(0,0,0,.15);
+	  color: #333;
+	  display: inline-block;
+	  font: 200 italic 1.85rem Fira Sans, Helvetica, sans-serif;
+	  font-size: calc(1.85rem + 1vw);
+	  letter-spacing: 0.015em;
+	  text-transform: uppercase;
+	  padding: 1rem 2rem;
+	  text-align: center;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.mozvr-bg {
+    background-image: url("misc/mozvr.jpg");
+    background-size: auto 100%;
+}
+
+.berlin-bg {
+    color: #FFF;
+    text-shadow: 0 0 10px black;
+    background-color: #1D1D1B;
+}
+
+.berlin-bg:after {
+    background-image: url("misc/berlin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    content: "";
+    top: 60%;
+    left: 60%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.mydino-bg:after {
+    background-image: url("misc/mydino.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    content: "";
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.reps-bg:after {
+    background-image: url("misc/remo_logo_clean.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.mozillians-bg:after {
+    background-image: url("misc/mozfest.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 .nightly-bg:after {
     background-image: url("misc/Mozilla_Firefox_Nightly_logo_2013.png");
     background-position: center;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 70%;
     content: "";
     opacity: 0.3;
     top: 0;
@@ -43,9 +190,25 @@ section, .view head > title {
 .dino-bg:after {
     background-image: url("misc/Mozilla_dinosaur_head_logo.png");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
     content: "";
     opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.rust-bg:after {
+    background-image: url("misc/Rust_programming_language_black_logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    content: "";
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -100,11 +263,6 @@ section, .view head > title {
     width: 30%;
 }
 
-
-.moz {
-    font-family: Meta, 'Open Sans', arial, serif;
-    color: #C13832;
-}
 
 .view section:after {
     counter-increment: slideidx;
